@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jessica LifeOS</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf8;
+    --panel: #ffffff;
+    --ink: #1f2024;
+    --muted: #63656d;
+    --line: #e4e2dd;
+    --accent: #3d6b55;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16171a;
+      --panel: #1e2024;
+      --ink: #eceef1;
+      --muted: #a2a5ad;
+      --line: #32353b;
+      --accent: #7fb79b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    padding: 0 16px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding-block: 64px 48px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 36px; }
+  h1 { font-size: 1.9rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .tagline { color: var(--muted); margin: 0; font-size: 1rem; }
+  section {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+  p { margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+  .en { color: var(--muted); font-size: 0.94rem; }
+  ul { margin: 0; padding-left: 1.3em; }
+  li { margin-bottom: 8px; }
+  li:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 36px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Jessica LifeOS</h1>
+    <p class="tagline">個人自動化工具 · Personal automation tool</p>
+  </header>
+
+  <section>
+    <h2>關於 / About</h2>
+    <p><strong>Jessica LifeOS 是 Jessica Hsia 的個人自動化工具，僅供本人使用。</strong></p>
+    <p class="en"><strong>Jessica LifeOS is a personal automation tool built by Jessica Hsia
+    for her own use only.</strong></p>
+    <p>它不是商業產品，沒有註冊功能，也不開放給其他使用者。它在 Jessica 自己的電腦上執行，
+    把每天的天氣、行事曆、郵件與待辦整理成一份傍晚日報。</p>
+    <p class="en">It is not a commercial product. There is no sign-up, and it is not available
+    to anyone else. It runs on Jessica's own computer and compiles each day's weather,
+    calendar, email, and tasks into a single evening report.</p>
+  </section>
+
+  <section>
+    <h2>它做什麼 / What it does</h2>
+    <ul>
+      <li>讀取本人的 Google Calendar，整理當天與隔天的行程<br>
+        <span class="en">Reads the owner's Google Calendar for today's and tomorrow's events</span></li>
+      <li>讀取本人的 Gmail，列出未讀的重要郵件標題<br>
+        <span class="en">Reads the owner's Gmail to list unread important message subjects</span></li>
+      <li>把整理好的結果寫成一頁私人筆記<br>
+        <span class="en">Writes the result into a single private note</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>隱私權 / Privacy</h2>
+    <p>此工具只存取擁有者本人的帳戶資料，資料保存在本機，不分享、不販售給任何第三方。</p>
+    <p class="en">This tool accesses only the owner's own account data. Data stays on the
+    local machine and is never shared with or sold to any third party.</p>
+    <p><a href="privacy.html">完整隱私權政策 · Read the full privacy policy →</a></p>
+  </section>
+
+  <footer>
+    最後更新 / Last updated: 2026-10-02<br>
+    聯絡 / Contact: Jessica Hsia —
+    <a href="mailto:jessica4188323@gmail.com">jessica4188323@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
